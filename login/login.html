@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="body">
+    
+    <header class="header">
+        <!-- LOGO -->
+        <h2 class="logo">KayOne</h2>
+        <!-- /LOGO -->
+        <!-- NAVIGATION -->
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="loginBtn">Login</button>
+        </nav>
+    <!-- /NAVIGATION -->
+    </header>
+     
+    <main class="formMain activePopup">
+        <span class="iconClose"><ion-icon name="close"></ion-icon></span>
+
+        <!-- LOGIN FORM -->
+        <div class="formBox login">
+            <h2 class="formTitle">Login</h2>
+            <form action="login" method="post">
+                <div class="inputBox">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email ID</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="password" name="pwd" required>
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit" class="submitBtn">Login</button>
+                <div class="checkbox">
+                    <label for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="link">
+                    <p>Don't have an Account? <a href="#" class="registerLink">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- /LOGIN FORM -->
+
+        <!-- REGISTRATION FORM -->
+        <div class="formBox register">
+            <h2 class="formTitle">Registration</h2>
+            <form action="register" method="post">
+                <div class="inputBox">
+                    <input type="text" id="fName" name="fName" required>
+                    <label for="fName">First Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="lName" name="lName" required>
+                    <label for="lName">Last Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="uName" name="uName" required>
+                    <label for="uName">User Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" id="mbl" name="mbl" required>
+                    <label for="mbl">Phone Number</label>
+                </div>
+                <div class="inputBox">
+                    <label for="city">City</label>
+                    <select name="city" id="city" required>
+                        <option value="">- -</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Trichy">Trichy</option>
+                        <option value="Salem">Salem</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email ID</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="pwd" name="pwd" required>
+                    <label for="pwd">Password</label>
+                </div>
+                <div class="checkbox">
+                    <label for="agree"><input type="checkbox" id="agree" required> I have agree to the Terms & Condition</label>
+                </div>
+                <button type="submit" class="submitBtn">Register</button>
+                <div class="link">
+                    <p>Already have an Account? <a href="#" class="loginLink">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- /REGISTRATION FORM -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
